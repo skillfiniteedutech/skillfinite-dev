@@ -45,7 +45,9 @@ const CourseDetailPage: React.FC<CourseDetailPageProps> = ({ courseId }) => {
             try {
                 setIsLoading(true);
                 const token = localStorage.getItem('token');
-                const response = await fetch(`${apiBaseUrl}/api/courses/${courseId}`, {
+                
+                // Use our proxy API route instead of direct backend call
+                const response = await fetch(`/api/courses/${courseId}`, {
                     method: "GET",
                     headers: {
                         'Content-Type': 'application/json',

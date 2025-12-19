@@ -21,15 +21,29 @@ export function EnrollmentProvider({ children }: { children: ReactNode }) {
         try {
             console.log('[EnrollmentContext] Starting to load enrollments...');
             setIsLoading(true)
+            
+            // Check if user is authenticated first
+            const token = localStorage.getItem('token');
+            if (!token) {
+                console.log('[EnrollmentContext] No token found, user not authenticated');
+                setEnrolledCourseIds([])
+                return;
+            }
+            
             const response = await getStudentCourses()
             console.log('[EnrollmentContext] Raw response:', response);
             
-            const courseIds = response.data.courses
-                .map((enrollment: any) => enrollment.course?.id)
-                .filter(Boolean)
-            
-            console.log('[EnrollmentContext] Extracted course IDs:', courseIds);
-            setEnrolledCourseIds(courseIds)
+            if (response.success && response.data?.courses) {
+                const courseIds = response.data.courses
+                    .map((enrollment: any) => enrollment.course?.id)
+                    .filter(Boolean)
+                
+                console.log('[EnrollmentContext] Extracted course IDs:', courseIds);
+                setEnrolledCourseIds(courseIds)
+            } else {
+                console.log('[EnrollmentContext] Invalid response format');
+                setEnrolledCourseIds([])
+            }
         } catch (error) {
             console.error('Failed to load enrollments:', error)
             // Silently fail - user might not be logged in
