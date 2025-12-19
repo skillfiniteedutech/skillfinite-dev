@@ -72,31 +72,51 @@ export function AuthProvider({ children }: AuthProviderProps) {
         }
       }
 
-      // Then check session API
-      const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'https://skillfinite-backend-47sd.onrender.com'
-      const response = await fetch(`${baseUrl}/api/auth/session`, {
-        method: 'GET',
-        credentials: 'include',
-      })
+      // Only check session API if we have no local auth
+      // This prevents infinite loops when backend is failing
+      if (!localToken) {
+        const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'https://skillfinite-backend-47sd.onrender.com'
+        
+        // Add timeout to prevent hanging requests
+        const controller = new AbortController()
+        const timeoutId = setTimeout(() => controller.abort(), 5000) // 5 second timeout
 
-      if (response.ok) {
-        const data = await response.json()
-        if (data.token) {
-          setToken(data.token)
-          // Try to get user info from localStorage or set a basic user
-          if (localUser) {
-            try {
-              setUser(JSON.parse(localUser))
-            } catch {
-              // Set basic user info if we can't parse localStorage
-              setUser({
-                id: 'unknown',
-                email: 'user@example.com',
-                name: 'User'
-              })
+        try {
+          const response = await fetch(`${baseUrl}/api/auth/session`, {
+            method: 'GET',
+            credentials: 'include',
+            signal: controller.signal
+          })
+
+          clearTimeout(timeoutId)
+
+          if (response.ok) {
+            const data = await response.json()
+            if (data.token) {
+              setToken(data.token)
+              // Try to get user info from localStorage or set a basic user
+              if (localUser) {
+                try {
+                  setUser(JSON.parse(localUser))
+                } catch {
+                  // Set basic user info if we can't parse localStorage
+                  setUser({
+                    id: 'unknown',
+                    email: 'user@example.com',
+                    name: 'User'
+                  })
+                }
+              }
+              return true
             }
           }
-          return true
+        } catch (error) {
+          clearTimeout(timeoutId)
+          if (error instanceof Error && error.name === 'AbortError') {
+            console.warn('Session check timeout')
+          } else {
+            console.warn('Session check failed:', error)
+          }
         }
       }
 
