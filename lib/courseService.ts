@@ -1,6 +1,4 @@
 
-import { getAuthHeaders } from './utils';
-
 const getBaseUrl = () => {
     return process.env.NEXT_PUBLIC_API_URL || 'https://skillfinite-backend-47sd.onrender.com';
 };
@@ -87,7 +85,15 @@ export interface CourseProgress {
 
 export const getCourseProgress = async (courseId: string): Promise<CourseProgress> => {
     try {
-        const headers = getAuthHeaders();
+        const token = localStorage.getItem('token');
+        const headers: HeadersInit = {
+            'Content-Type': 'application/json',
+        };
+
+        if (token) {
+            headers['Authorization'] = `Bearer ${token}`;
+        }
+
         const baseUrl = getBaseUrl();
         const response = await fetch(`${baseUrl}/api/progress/${courseId}`, {
             method: 'GET',
@@ -107,7 +113,15 @@ export const getCourseProgress = async (courseId: string): Promise<CourseProgres
 
 export const updateCourseProgress = async (courseId: string, lessonId: string, completed: boolean): Promise<any> => {
     try {
-        const headers = getAuthHeaders();
+        const token = localStorage.getItem('token');
+        const headers: HeadersInit = {
+            'Content-Type': 'application/json',
+        };
+
+        if (token) {
+            headers['Authorization'] = `Bearer ${token}`;
+        }
+
         const baseUrl = getBaseUrl();
         const response = await fetch(`${baseUrl}/api/progress/${courseId}`, {
             method: 'POST',
@@ -128,7 +142,15 @@ export const updateCourseProgress = async (courseId: string, lessonId: string, c
 
 export const getCourseById = async (courseId: string): Promise<HelperCourse> => {
     try {
-        const headers = getAuthHeaders();
+        const token = localStorage.getItem('token');
+        const headers: HeadersInit = {
+            'Content-Type': 'application/json',
+        };
+
+        if (token) {
+            headers['Authorization'] = `Bearer ${token}`;
+        }
+
         console.log(`Fetching course with ID: ${courseId}`);
         const baseUrl = getBaseUrl();
         const response = await fetch(`${baseUrl}/api/courses/${courseId}`, {

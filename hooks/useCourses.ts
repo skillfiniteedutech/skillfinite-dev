@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Course } from '@/data/mockData';
-import { getAuthHeaders } from '@/lib/utils';
 
 const BACKEND_URL = process.env.NEXT_PUBLIC_API_URL || 'https://skillfinite-backend-47sd.onrender.com';
 const API = `${BACKEND_URL}/api`;
@@ -28,9 +27,16 @@ export const useCourses = (): UseCourseReturn => {
         setError(null);
 
         try {
-            const response = await axios.get(`${API}/courses`, {
-                headers: getAuthHeaders()
-            });
+            const token = localStorage.getItem('token');
+            const headers: any = {
+                'Content-Type': 'application/json',
+            };
+
+            if (token) {
+                headers['Authorization'] = `Bearer ${token}`;
+            }
+
+            const response = await axios.get(`${API}/courses`, { headers });
 
             if (response.data.success && response.data.data.courses) {
                 const mappedCourses: Course[] = response.data.data.courses.map((c: any) => ({
