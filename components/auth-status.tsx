@@ -26,7 +26,10 @@ export function AuthStatus() {
           }
         }
 
-        // Check session API
+        // Check session API - DISABLED to prevent infinite loops
+        // The session API is failing and causing repeated 401 errors
+        // Commenting out to improve performance and prevent loops
+        /*
         try {
           const baseUrl = process.env.NEXT_PUBLIC_API_URL || 'https://skillfinite-backend-47sd.onrender.com'
           const response = await fetch(`${baseUrl}/api/auth/session`, {
@@ -41,6 +44,7 @@ export function AuthStatus() {
         } catch (error) {
           console.warn('Failed to get session:', error)
         }
+        */
       } finally {
         setLoading(false)
       }

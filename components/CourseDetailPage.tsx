@@ -163,6 +163,7 @@ const CourseDetailPage: React.FC<CourseDetailPageProps> = ({ courseId }) => {
                 setIsLoading(false);
             } catch (error) {
                 console.error("Error fetching course details:", error);
+                console.error("Error details:", error instanceof Error ? error.message : error);
                 setCourse(null);
                 setIsLoading(false);
             }

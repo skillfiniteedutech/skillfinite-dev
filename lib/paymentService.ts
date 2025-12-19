@@ -99,7 +99,9 @@ const getAuthToken = async (): Promise<string | null> => {
   const localToken = localStorage.getItem('token')
   if (localToken) return localToken
 
-  // Fallback to session check
+  // Fallback to session check - DISABLED to prevent infinite loops
+  // The session API is failing and causing repeated 401 errors
+  /*
   try {
     const baseUrl = getBaseUrl()
     const res = await fetch(`${baseUrl}/api/auth/session`, {
@@ -119,6 +121,9 @@ const getAuthToken = async (): Promise<string | null> => {
   } catch {
     return null
   }
+  */
+  
+  return null
 }
 
 const makeRequest = async (url: string, options: RequestInit = {}) => {
