@@ -1,0 +1,9 @@
+# Production Environment Variables
+NEXT_PUBLIC_API_URL=https://skillfinite-backend-47sd.onrender.com
+NEXT_PUBLIC_RAZORPAY_KEY_ID=your_production_razorpay_key
+
+# Backend configuration (if needed)
+BACKEND_URL=https://skillfinite-backend-47sd.onrender.com
+
+# Other production variables
+NODE_ENV=production
