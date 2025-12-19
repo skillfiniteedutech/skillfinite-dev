@@ -110,7 +110,7 @@ const CourseDetailPage: React.FC<CourseDetailPageProps> = ({ courseId }) => {
                     mode: data.settings?.access?.enrollmentType || 'open',
                     tag: tags[0] || '',
                     bestseller: (data.studentsEnrolled || 0) > 500,
-                    lectures: data.curriculum?.length || parseInt(data.duration) * 2 || 20,
+                    lectures: data.curriculum?.length || (data.duration ? parseInt(data.duration.toString()) * 2 : 20),
                     updatedAt: data.updatedAt ? new Date(data.updatedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' }) : 'Recently',
                     language: data.language || 'English',
                     captions: data.captions || ['English [Auto]'],
