@@ -1,0 +1,606 @@
+{
+    "success": true,
+    "message": "Student courses retrieved successfully",
+    "data": {
+        "totalCourses": 10,
+        "courses": [
+            {
+                "enrollmentId": "6890d6df440ad637deab15ae",
+                "course": null,
+                "purchaseDate": "2025-08-04T15:50:55.947Z",
+                "isFree": true,
+                "paymentId": null,
+                "price": 0
+            },
+            {
+                "enrollmentId": "68921bc0a7d8569b5848e817",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "free",
+                            "price": null,
+                            "currency": "USD",
+                            "discountPrice": null,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "6890a70462e2a4bee326d03e",
+                    "id": "363f0762-3a50-46b8-bbb2-a05a5018c148",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "bn",
+                    "subtitle": "dwd",
+                    "description": " bbbbb bbbb",
+                    "category": "Data Science",
+                    "level": "Intermediate",
+                    "language": "English",
+                    "tags": [
+                        "[\"bbb\"]"
+                    ],
+                    "thumbnail": "https://res.cloudinary.com/djhp237ou/image/upload/v1754310402/Skillfinite/Thumbnails/vudkym6hd7zdy35gfaha.svg",
+                    "learningObjectives": [
+                        "[\"bbbbb bbbb\"]"
+                    ],
+                    "status": "draft",
+                    "videos": [],
+                    "documents": [
+                        {
+                            "id": "1ad12dcb-ec4a-49b6-a660-a0003c481cf4",
+                            "title": "sql_points_report_header_single_sheet",
+                            "description": "document uploaded on 04/08/2025",
+                            "url": "https://res.cloudinary.com/djhp237ou/raw/upload/v1754310429/Skillfinite/Documents/v7rqdr1qvy5a9pqvtoxr",
+                            "fileName": "sql_points_report_header_single_sheet.txt",
+                            "size": 22576,
+                            "uploadedAt": "2025-08-04T12:27:10.008Z"
+                        }
+                    ],
+                    "curriculum": [],
+                    "quizzes": [],
+                    "createdAt": "2025-08-04T12:26:44.260Z",
+                    "updatedAt": "2025-08-04T12:26:44.263Z",
+                    "__v": 0
+                },
+                "purchaseDate": "2025-08-05T14:57:04.381Z",
+                "isFree": true,
+                "paymentId": null,
+                "price": 0
+            },
+            {
+                "enrollmentId": "689637e86226b521f053766a",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "free",
+                            "price": null,
+                            "currency": "USD",
+                            "discountPrice": null,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "68960f5ff533546bd1a2dcae",
+                    "id": "82997956-fc22-453a-8477-4ce37635321d",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "python",
+                    "subtitle": "Provide the basic details about your course that will help students understand what they'll learn.",
+                    "description": "A detailed description helps students understand the value of your course.\r\n\r\n",
+                    "category": "Artificial Intelligence",
+                    "level": "Advanced",
+                    "language": "English",
+                    "tags": [
+                        "[\"sss\"]"
+                    ],
+                    "thumbnail": "",
+                    "learningObjectives": [
+                        "[\"What will students be able to do after completing this course?\"]"
+                    ],
+                    "status": "published",
+                    "videos": [],
+                    "documents": [
+                        {
+                            "id": "fe7a9fe1-aac1-49b7-8a4b-23e765fb8c8b",
+                            "title": "Gen_AI_POPM_V1_1124",
+                            "description": "document uploaded on 8/8/2025",
+                            "url": "https://res.cloudinary.com/djhp237ou/raw/upload/v1754664821/Skillfinite/Documents/bjbe8izdznodnj0z0gnp",
+                            "fileName": "Gen_AI_POPM_V1_1124.pdf",
+                            "size": 2467430,
+                            "uploadedAt": "2025-08-08T14:53:42.440Z"
+                        }
+                    ],
+                    "curriculum": [
+                        {
+                            "moduleId": "87ecf95d-8295-43fb-a916-753a91feb717",
+                            "title": "Module 1",
+                            "description": "",
+                            "order": 1,
+                            "lessons": [
+                                {
+                                    "lessonId": "e7c1a4bf-fbb8-4fc8-b0ab-6da89328c700",
+                                    "title": "New document lesson",
+                                    "type": "document",
+                                    "resourceId": "document-1754664845156",
+                                    "order": 1
+                                }
+                            ]
+                        }
+                    ],
+                    "quizzes": [],
+                    "createdAt": "2025-08-08T14:53:19.623Z",
+                    "updatedAt": "2025-08-08T14:53:19.626Z",
+                    "__v": 0,
+                    "publishedAt": "2025-08-08T14:54:27.373Z"
+                },
+                "purchaseDate": "2025-08-08T17:46:16.890Z",
+                "isFree": true,
+                "paymentId": null,
+                "price": 0
+            },
+            {
+                "enrollmentId": "689640926226b521f05376ee",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "paid",
+                            "price": 332.74,
+                            "currency": "USD",
+                            "discountPrice": null,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "68963db4f533546bd1a2dcd1",
+                    "id": "c1415d1e-1149-46da-95b9-c72cace4a6f7",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "defe",
+                    "subtitle": "dwdw",
+                    "description": "ssss",
+                    "category": "Artificial Intelligence",
+                    "level": "Advanced",
+                    "language": "Spanish",
+                    "tags": [
+                        "[\"sss\"]"
+                    ],
+                    "thumbnail": "",
+                    "learningObjectives": [
+                        "[]"
+                    ],
+                    "status": "published",
+                    "videos": [],
+                    "documents": [],
+                    "curriculum": [],
+                    "quizzes": [],
+                    "createdAt": "2025-08-08T18:11:00.602Z",
+                    "updatedAt": "2025-08-08T18:11:00.603Z",
+                    "__v": 0,
+                    "publishedAt": "2025-08-08T18:11:45.335Z"
+                },
+                "purchaseDate": "2025-08-08T18:23:14.382Z",
+                "isFree": false,
+                "paymentId": "pay_R2wCITwwHIria7",
+                "price": 332.74
+            },
+            {
+                "enrollmentId": "6896440d6226b521f0537767",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "paid",
+                            "price": 1,
+                            "currency": "USD",
+                            "discountPrice": 22,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "689641f660b3ee5477ca84e7",
+                    "id": "ac0fe794-4d63-41e5-9af4-29798d2e4a0f",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "java",
+                    "subtitle": "Provide the basic details about your course that will help students understand what they'll learn.",
+                    "description": "Provide the basic details about your course that will help students understand what they'll learn.\r\n",
+                    "category": "Machine Learning",
+                    "level": "Intermediate",
+                    "language": "English",
+                    "tags": [
+                        "[]"
+                    ],
+                    "thumbnail": "",
+                    "learningObjectives": [
+                        "[]"
+                    ],
+                    "status": "published",
+                    "videos": [],
+                    "documents": [],
+                    "curriculum": [],
+                    "quizzes": [],
+                    "createdAt": "2025-08-08T18:29:10.505Z",
+                    "updatedAt": "2025-08-08T18:29:10.596Z",
+                    "__v": 0,
+                    "publishedAt": "2025-08-08T18:29:56.714Z"
+                },
+                "purchaseDate": "2025-08-08T18:38:05.597Z",
+                "isFree": false,
+                "paymentId": "pay_R2wS4LXvMxQg9J",
+                "price": 1
+            },
+            {
+                "enrollmentId": "689a0c6ef9444a571f21c20d",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "paid",
+                            "price": 122,
+                            "currency": "INR",
+                            "discountPrice": null,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "6898c057be8c88b3bcfdbf7e",
+                    "id": "45093379-66cb-4f4a-b4e7-2ad1e0dd9758",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "React JS",
+                    "subtitle": "Provide the basic details about your course that will help students understand what they'll learn.",
+                    "description": "A detailed description helps students understand the value of your course.\r\n\r\n",
+                    "category": "Data Science",
+                    "level": "Intermediate",
+                    "language": "English",
+                    "tags": [
+                        "[\"fef\"]"
+                    ],
+                    "thumbnail": "",
+                    "learningObjectives": [
+                        "[\"A detailed description helps students understand the value of your course.\",\"A detailed description helps students understand the value of your course.\",\"A detailed description helps students understand the value of your course.\",\"A detailed description helps students understand the value of your course.\"]"
+                    ],
+                    "status": "draft",
+                    "videos": [],
+                    "documents": [],
+                    "curriculum": [],
+                    "quizzes": [],
+                    "createdAt": "2025-08-10T15:52:55.588Z",
+                    "updatedAt": "2025-08-10T15:52:55.591Z",
+                    "__v": 0
+                },
+                "purchaseDate": "2025-08-11T15:29:50.949Z",
+                "isFree": false,
+                "paymentId": "pay_R44qfTk2V6xlHx",
+                "price": 122
+            },
+            {
+                "enrollmentId": "689a0fb5f9444a571f21c265",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "paid",
+                            "price": 100,
+                            "currency": "INR",
+                            "discountPrice": 50,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "689a0f0d1cea1fa1e5484a6a",
+                    "id": "19ccd386-fc04-4786-a8b4-de8376f53167",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "java",
+                    "subtitle": "Provide the basic details about your course that will help students understand what they'll learn.",
+                    "description": "A detailed description helps students understand the value of your course.\r\n\r\n",
+                    "category": "Artificial Intelligence",
+                    "level": "Intermediate",
+                    "language": "English",
+                    "tags": [
+                        "[\"ss\"]"
+                    ],
+                    "thumbnail": "",
+                    "learningObjectives": [
+                        "[\"A detailed description helps students understand the value of your course.\",\"A detailed description helps students understand the value of your course.\"]"
+                    ],
+                    "status": "published",
+                    "videos": [],
+                    "documents": [],
+                    "curriculum": [],
+                    "quizzes": [],
+                    "createdAt": "2025-08-11T15:41:01.487Z",
+                    "updatedAt": "2025-08-11T15:41:01.490Z",
+                    "__v": 0,
+                    "publishedAt": "2025-08-11T15:41:54.642Z"
+                },
+                "purchaseDate": "2025-08-11T15:43:49.588Z",
+                "isFree": false,
+                "paymentId": "pay_R455LZ69gsUydW",
+                "price": 100
+            },
+            {
+                "enrollmentId": "689b7e4f9229a5433811f50d",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "paid",
+                            "price": 2,
+                            "currency": "INR",
+                            "discountPrice": 1,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "689b7d78d4e4462ca5d0e2bb",
+                    "id": "801b4d10-cd50-4f35-9185-e3d321535df6",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "edgeg",
+                    "subtitle": "fefefe",
+                    "description": "fefef",
+                    "category": "Machine Learning",
+                    "level": "Advanced",
+                    "language": "English",
+                    "tags": [
+                        "[\"fff\"]"
+                    ],
+                    "thumbnail": "",
+                    "learningObjectives": [
+                        "[\"What will students be able to do after completing this course?\",\"A detailed description helps students understand the value of your course.\"]"
+                    ],
+                    "status": "draft",
+                    "videos": [],
+                    "documents": [],
+                    "curriculum": [],
+                    "quizzes": [],
+                    "createdAt": "2025-08-12T17:44:24.397Z",
+                    "updatedAt": "2025-08-12T17:44:24.402Z",
+                    "__v": 0
+                },
+                "purchaseDate": "2025-08-12T17:47:59.856Z",
+                "isFree": false,
+                "paymentId": "pay_R4VjifUjuUg441",
+                "price": 2
+            },
+            {
+                "enrollmentId": "689b87759229a5433811f620",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "free",
+                            "price": null,
+                            "currency": "USD",
+                            "discountPrice": null,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "689b8745d4e4462ca5d0e2d8",
+                    "id": "8cd29c70-983d-4d1a-b69d-8f7b141376d5",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "bootstrap",
+                    "subtitle": "fwf",
+                    "description": "What will students be able to do after completing this course?",
+                    "category": "Cyber Security",
+                    "level": "Intermediate",
+                    "language": "English",
+                    "tags": [
+                        "[\"dd\"]"
+                    ],
+                    "thumbnail": "https://res.cloudinary.com/djhp237ou/image/upload/v1755023172/Skillfinite/Thumbnails/rigpstg3sxv3cpsen6xu.png",
+                    "learningObjectives": [
+                        "[]"
+                    ],
+                    "status": "published",
+                    "videos": [],
+                    "documents": [],
+                    "curriculum": [],
+                    "quizzes": [],
+                    "createdAt": "2025-08-12T18:26:13.605Z",
+                    "updatedAt": "2025-08-12T18:26:13.606Z",
+                    "__v": 0,
+                    "publishedAt": "2025-08-12T18:26:43.619Z"
+                },
+                "purchaseDate": "2025-08-12T18:27:01.411Z",
+                "isFree": true,
+                "paymentId": null,
+                "price": 0
+            },
+            {
+                "enrollmentId": "68ab42be99479b8179d94513",
+                "course": {
+                    "settings": {
+                        "pricing": {
+                            "type": "paid",
+                            "price": 1,
+                            "currency": "INR",
+                            "discountPrice": null,
+                            "discountEndDate": ""
+                        },
+                        "access": {
+                            "enrollmentType": "open",
+                            "maxStudents": null,
+                            "startDate": "",
+                            "endDate": "",
+                            "lifetime": true
+                        },
+                        "features": {
+                            "downloadable": true,
+                            "certificate": true,
+                            "discussions": true,
+                            "assignments": false,
+                            "liveSession": false
+                        }
+                    },
+                    "_id": "68ab4178dd54501994a082c4",
+                    "id": "6a493a6b-70fa-4554-8a42-b426a6ba94fa",
+                    "instructorId": "6866197e759012a7b0ca5ef0",
+                    "title": "Devops",
+                    "subtitle": "Provide the basic details about your course that will help students understand what they'll learn.",
+                    "description": "nnn n n nnn n ",
+                    "category": "Big Data ",
+                    "level": "Intermediate",
+                    "language": "English",
+                    "tags": [
+                        "[\"jj\"]"
+                    ],
+                    "thumbnail": "https://res.cloudinary.com/djhp237ou/image/upload/v1756053880/Skillfinite/Thumbnails/m0ovkrx1ugzbdmcwmkzf.png",
+                    "learningObjectives": [
+                        "[\"What will students be able to do after completing this course?\"]"
+                    ],
+                    "status": "published",
+                    "videos": [
+                        {
+                            "id": "d62aa037-4969-400a-b6fa-2c8ee68105a7",
+                            "title": "DevOps CI_CD Explained in 100 Seconds",
+                            "description": "video uploaded on 8/24/2025",
+                            "url": "https://res.cloudinary.com/djhp237ou/video/upload/v1756053909/Skillfinite/Videos/fvrtou93aalernby1pxe.mp4",
+                            "duration": "00:00",
+                            "size": 3371275,
+                            "uploadedAt": "2025-08-24T16:45:10.844Z"
+                        }
+                    ],
+                    "documents": [
+                        {
+                            "id": "1284ed9f-c9eb-4afd-a22b-62ea5b5e4d8f",
+                            "title": "Gen_AI_POPM_V1_1124",
+                            "description": "document uploaded on 8/24/2025",
+                            "url": "https://res.cloudinary.com/djhp237ou/raw/upload/v1756053913/Skillfinite/Documents/wgk3tr2s3qzv5mqzw6yq",
+                            "fileName": "Gen_AI_POPM_V1_1124.pdf",
+                            "size": 2467430,
+                            "uploadedAt": "2025-08-24T16:45:13.746Z"
+                        }
+                    ],
+                    "curriculum": [
+                        {
+                            "moduleId": "da52ce75-87ce-4653-b152-92d6a5a4f173",
+                            "title": "Module 1",
+                            "description": "",
+                            "order": 1,
+                            "lessons": [
+                                {
+                                    "lessonId": "fe203218-3175-4a6c-a6a3-529c52870c6c",
+                                    "title": "DevOps CI_CD Explained in 100 Seconds",
+                                    "type": "video",
+                                    "resourceId": "d62aa037-4969-400a-b6fa-2c8ee68105a7",
+                                    "order": 1
+                                },
+                                {
+                                    "lessonId": "1d1abf37-595f-4690-8db9-0468eb3759e0",
+                                    "title": "Gen_AI_POPM_V1_1124",
+                                    "type": "document",
+                                    "resourceId": "1284ed9f-c9eb-4afd-a22b-62ea5b5e4d8f",
+                                    "order": 2
+                                }
+                            ]
+                        }
+                    ],
+                    "quizzes": [],
+                    "createdAt": "2025-08-24T16:44:40.688Z",
+                    "updatedAt": "2025-08-24T16:44:40.693Z",
+                    "__v": 0,
+                    "publishedAt": "2025-08-24T16:46:55.526Z"
+                },
+                "purchaseDate": "2025-08-24T16:50:06.319Z",
+                "isFree": false,
+                "paymentId": "pay_R9FA0vu4Kx3osh",
+                "price": 1
+            }
+        ]
+    }
+}
