@@ -27,16 +27,7 @@ export const useCourses = (): UseCourseReturn => {
         setError(null);
 
         try {
-            const token = localStorage.getItem('token');
-            const headers: any = {
-                'Content-Type': 'application/json',
-            };
-
-            if (token) {
-                headers['Authorization'] = `Bearer ${token}`;
-            }
-
-            const response = await axios.get(`${API}/courses`, { headers });
+            const response = await axios.get(`${API}/courses`);
 
             if (response.data.success && response.data.data.courses) {
                 const mappedCourses: Course[] = response.data.data.courses.map((c: any) => ({
