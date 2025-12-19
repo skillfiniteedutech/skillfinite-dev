@@ -1,4 +1,6 @@
 // Base API configuration
+import { getAuthHeaders, getToken } from './utils';
+
 const getBaseUrl = () => {
     return process.env.NEXT_PUBLIC_API_URL || 'https://skillfinite-backend-47sd.onrender.com';
 };
@@ -41,7 +43,8 @@ interface EnrolledCoursesResponse {
  */
 export const getEnrolledCourses = async (): Promise<EnrolledCoursesResponse> => {
     try {
-        const token = localStorage.getItem('token');
+        const headers = getAuthHeaders();
+        const token = getToken(); // For authentication check
 
         if (!token) {
             // Return empty response when not authenticated
@@ -58,10 +61,7 @@ export const getEnrolledCourses = async (): Promise<EnrolledCoursesResponse> => 
         const baseUrl = getBaseUrl();
         const response = await fetch(`${baseUrl}/api/enrollment/student/courses`, {
             method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            }
+            headers: headers
         });
 
         if (!response.ok) {
@@ -83,7 +83,8 @@ export const getEnrolledCourses = async (): Promise<EnrolledCoursesResponse> => 
  */
 export const checkCourseAccess = async (courseId: string): Promise<boolean> => {
     try {
-        const token = localStorage.getItem('token');
+        const headers = getAuthHeaders();
+        const token = getToken();
 
         if (!token) {
             return false;
@@ -92,10 +93,7 @@ export const checkCourseAccess = async (courseId: string): Promise<boolean> => {
         const baseUrl = getBaseUrl();
         const response = await fetch(`${baseUrl}/api/enrollment/course/${courseId}/access`, {
             method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            }
+            headers: headers
         });
 
         if (response.ok) {
@@ -117,16 +115,12 @@ export const checkCourseAccess = async (courseId: string): Promise<boolean> => {
 export const getEnrollmentStatus = async (courseId: string) => {
     try {
         console.log('[EnrollmentService] Getting enrollment status...');
-        const token = localStorage.getItem('token');
+        const headers = getAuthHeaders();
+        const token = getToken();
 
         if (!token) {
             throw new Error('No authentication token found');
         }
-
-        const headers: HeadersInit = {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${token}`
-        };
 
         const baseUrl = getBaseUrl();
         console.log('[EnrollmentService] Making request to:', `${baseUrl}/api/enrollment/course/${courseId}/status`);
@@ -134,10 +128,7 @@ export const getEnrollmentStatus = async (courseId: string) => {
 
         const response = await fetch(`${baseUrl}/api/enrollment/course/${courseId}/status`, {
             method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`
-            }
+            headers: headers
         });
 
         console.log('[EnrollmentService] Response status:', response.status);
